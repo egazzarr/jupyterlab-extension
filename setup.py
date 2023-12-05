@@ -55,12 +55,12 @@ setup_args = dict(
     long_description_content_type="text/markdown",
     packages=setuptools.find_packages(),
     install_requires=[
-        "jupyter_server>=1.6,<2",
-        "requests~=2.25.0",
-        "peewee~=3.14.0",
-        "jsonschema~=3.2.0",
-        "psutil~=5.8.0",
-        "rucio-clients>=1.26.0",
+        "jupyter_server>=2",
+        "requests>=2.31",
+        "peewee",
+        "jsonschema>=4.18.0",
+        "psutil",
+        "rucio-clients>=1.30.0",
         "pyjwt"
     ],
     zip_safe=False,
@@ -76,6 +76,8 @@ setup_args = dict(
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
         "Framework :: Jupyter",
         # These classifiers will be valid when https://github.com/pypa/warehouse/pull/9882 gets merged
         # "Framework :: Jupyter :: JupyterLab",
