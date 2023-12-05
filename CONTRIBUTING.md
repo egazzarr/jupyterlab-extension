@@ -20,6 +20,10 @@ jupyter server extension enable rucio_jupyterlab.server
 # Rebuild extension Typescript source after making changes
 jlpm run build
 ```
+If the last command gives you problems, run:
+```bash 
+export NODE_OPTIONS=--openssl-legacy-provider
+```
 
 You can watch the source directory and run JupyterLab at the same time in different terminals to watch for changes in the extension's source and automatically rebuild the extension.
 
